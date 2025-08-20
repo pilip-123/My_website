@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    width: 100%;
+    padding: 25px;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.logo h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    text-decoration: none;
+    margin-right: 80px;
+}
+
+ul li a {
+    list-style: none;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: aliceblue;
+    border-radius: 2px;
+}
+
+ul button {
+    width: 80px;
+    height: 30px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+ul #B {
+    width: 80px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+ul button:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.benner {
+    background-image: url(../Images/benner_home.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.benner .Title {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.Title button {
+    width: 18%;
+    height: 40px;
+    background-color: green;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 0 5px white;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.Title button:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+
+.content {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin-left: 26%;
+    margin-top: 20px;
+}
+
+.main_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.content_box {
+    width: 20%;
+    height: 40vh;
+    background-color: white;
+    box-shadow: 0 0 5px;
+    border-radius: 2px;
+}
+
+.content_box:hover {
+    transform: translateY(-3px);
+}
+
+.content_box img {
+    width: 100%;
+    height: 20vh;
+    border-radius: 2px 2px 0 0;
+}
+
+.content_box h3 {
+    padding: 10px;
+}
+
+.main_price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.star {
+    gap: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: gold;
+}
+
+.btn button {
+    width: 90px;
+    height: 35px;
+    margin-top: 10px;
+    background-color: rgb(3, 112, 3);
+    border: 0;
+    color: white;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+.btn button:hover {
+    transform: translateY(-2px);
+    background-color: rgb(22, 206, 22);
+    cursor: pointer;
+}
+
+.btn #B {
+    width: 35px;
+    height: 35px;
+}
+
+.main_content_2 {
+    padding: 20px;
+}
+
+.content_2 {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 0 0 5px;
+    border-radius: 4px;
+}
+
+.content_2 img {
+    width: 50%;
+    height: 60vh;
+    border-radius: 4px 0 0 4px;
+}
+
+.content_2 .paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.paragraph h2 {
+    color: green;
+    font-weight: bold;
+}
+
+.paragraph p {
+    display: flex;
+    text-align: justify;
+}
+
+.picture {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    color: green;
+}
+
+.pic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pic img {
+    width: 90%;
+    height: 30vh;
+    border-radius: 150px;
+    box-shadow: 0 0 2px;
+}
+
+.pic:hover {
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+.pic_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pic_1 img {
+    width: 100%;
+    height: 30vh;
+    border-radius: 130px;
+    box-shadow: 0 0 2px;
+}
+
+.pic_1:hover {
+    transform: translateY(-2px);
+    cursor: pointer;
+}
