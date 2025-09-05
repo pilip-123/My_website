@@ -6,7 +6,7 @@
 
 nav {
     width: 100%;
-    padding: 25px;
+    padding: 20px;
     background-color: gray;
     display: flex;
     flex-direction: row;
@@ -46,13 +46,11 @@ ul {
 }
 
 ul li a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
     list-style: none;
     text-decoration: none;
-}
-
-li a:hover {
-    background-color: aliceblue;
-    border-radius: 2px;
 }
 
 ul button {
@@ -83,7 +81,7 @@ ul button:hover {
 }
 
 .benner {
-    background-image: url(../Images/benner_home.webp);
+    background-image: linear-gradient(135deg, rgba(93, 39, 210, 0.6), rgba(156, 36, 52, 0.6), rgba(255, 166, 0, 0.644)), url("../Images/benner_home.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -209,7 +207,7 @@ ul button:hover {
 
 .content_2 {
     width: 100%;
-    height: 60vh;
+    height: 64vh;
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -219,7 +217,7 @@ ul button:hover {
 
 .content_2 img {
     width: 50%;
-    height: 60vh;
+    height: 64vh;
     border-radius: 4px 0 0 4px;
 }
 
