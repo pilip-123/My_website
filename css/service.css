@@ -12,6 +12,8 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 .logo {
@@ -85,7 +87,7 @@ ul button:hover {
 }
 
 .benner {
-    background-image: linear-gradient(135deg, rgba(93, 39, 210, 0.6), rgba(156, 36, 52, 0.6), rgba(255, 166, 0, 0.644)), url(../Images/orange.jpg);
+    background-image: linear-gradient(135deg, rgba(30, 39, 210, 0.244), rgba(156, 36, 52, 0.293), rgba(255, 166, 0, 0.342)), url(../Images/orange.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -571,4 +573,196 @@ ul button:hover {
     padding: 10px;
     gap: 20px;
     margin-top: 20px;
+}
+
+/* .....................footer ....................... */
+
+footer {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: black;
+    color: white;
+
+}
+
+.foot_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.content_foot {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content_foot h3{
+    display: flex;
+    align-items: center;
+    color: darkorange;
+}
+
+.content_foot ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.content_foot-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content_foot-1 h3{
+    color: darkorange;
+}
+
+.content_foot-1 ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ...........social ............ */
+.logo_fo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+}
+
+.social img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social img:hover {
+    transform: translateY(-2px);
+}
+
+.logo_fo-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo_fo-1 h3{
+    color: darkorange;
+}
+
+.logo_fo-1 img {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*................ contacts us............. */
+
+
+form {
+    width: 140%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+input,
+textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+    padding: 8px 0;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-bottom: 1px solid #fff;
+}
+
+.content_foot-2 button{
+    width: 140%;
+    height: 45px;
+    border-radius: 20px;
+    background-color: black;
+    border: 2px solid darkorange;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.content_foot-2 button:hover{
+    background-color: orange;
+}
+
+/*............... hr ............ */
+
+hr{
+    width: 97%;
+    margin-top: 40px;
+}
+
+.content_foot-3{
+    padding: 0 40px 0 0 ;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.foot_left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* .........mune ...... */
+.To_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.content_fo ul {
+    gap: 30px;
+}
+
+.content_fo-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px 0 0;
+}
+
+li h2{
+    color: darkorange;
 }

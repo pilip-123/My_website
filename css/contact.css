@@ -7,11 +7,13 @@
 nav {
     width: 100%;
     padding: 15px;
-    background-color:black;
+    background-color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 .logo {
@@ -85,7 +87,7 @@ ul button:hover {
 }
 
 .benner {
-    background-image: linear-gradient(135deg, rgba(93, 39, 210, 0.6), rgba(156, 36, 52, 0.6), rgba(255, 166, 0, 0.644)), url("../Images/fresh-fruit.-colorful.jpg");
+    background-image: linear-gradient(135deg, rgba(30, 39, 210, 0.353), rgba(156, 36, 52, 0.375), rgba(255, 166, 0, 0.447)), url("../Images/assorted-fresh-ripe-fruits-vegetables-260nw-770613370.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -126,6 +128,338 @@ ul button:hover {
     cursor: pointer;
 }
 
-button{
+button {
     cursor: pointer;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.address .fas {
+    font-size: 60px;
+    color: green;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.phone .fas {
+    font-size: 40px;
+    color: green;
+}
+
+
+.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.contact .map-container {
+    width: 50%;
+}
+
+.form-container {
+    width: 50%;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+input,
+textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+    padding: 8px 0;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-bottom: 1px solid #fff;
+}
+
+.Robot_test{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.Robot h2{
+    color: darkorange;
+}
+
+.Robot{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Robot_1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Robot_1 span{
+    color: darkorange;
+}
+
+.btn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn button{
+    width: 80%;
+    height: 50px;
+    border: 1px solid darkorange;
+    background-color: rgba(0, 0, 0, 0.86);
+    color: white;
+    font-size: 20px;
+    border-radius: 24px;
+}
+
+.btn button:hover{
+    background-color:rgb(255, 166, 0);
+    border: 2px solid rgb(252, 182, 53);
+    box-shadow: 0 0 2px;
+}
+
+/* .....................footer ....................... */
+
+footer {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: black;
+    color: white;
+
+}
+
+.foot_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.content_foot {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content_foot h3{
+    display: flex;
+    align-items: center;
+    color: darkorange;
+}
+
+.content_foot ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.content_foot-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content_foot-1 h3{
+    color: darkorange;
+}
+
+.content_foot-1 ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ...........social ............ */
+.logo_fo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+}
+
+.social img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social img:hover {
+    transform: translateY(-2px);
+}
+
+.logo_fo-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo_fo-1 h3{
+    color: darkorange;
+}
+
+.logo_fo-1 img {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*................ contacts us............. */
+
+
+form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+input,
+textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+    padding: 8px 0;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-bottom: 1px solid #fff;
+}
+
+.content_foot-2 form{
+    width: 140%;
+}
+
+.content_foot-2 button{
+    width: 140%;
+    height: 45px;
+    border-radius: 20px;
+    background-color: black;
+    border: 2px solid darkorange;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.content_foot-2 button:hover{
+    background-color: rgb(255, 166, 0);
+}
+
+/*............... hr ............ */
+
+hr{
+    width: 97%;
+    margin-top: 40px;
+}
+
+.content_foot-3{
+    padding: 0 40px 0 0 ;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.foot_left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* .........mune ...... */
+.To_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.content_fo ul {
+    gap: 30px;
+}
+
+.content_fo-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px 0 0;
+}
+
+li h2{
+    color: darkorange;
 }

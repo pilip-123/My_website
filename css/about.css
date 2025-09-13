@@ -7,11 +7,13 @@
 nav {
     width: 100%;
     padding: 15px;
-    background-color:black;
+    background-color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 .logo {
@@ -85,7 +87,7 @@ ul button:hover {
 }
 
 .benner {
-    background-image: linear-gradient(135deg, rgba(93, 39, 210, 0.6), rgba(156, 36, 52, 0.6), rgba(255, 166, 0, 0.644)), url("../Images/fresh-fruit.-colorful.jpg");
+    background-image: url("../Images/fresh-fruit-smoothie-with-splash_1305385-231.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -94,6 +96,7 @@ ul button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .benner .Title {
@@ -126,11 +129,11 @@ ul button:hover {
     cursor: pointer;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,13 +142,13 @@ button{
     margin-top: 10px;
 }
 
-.content p{
+.content p {
     width: 50%;
     display: flex;
     text-align: justify;
 }
 
-.Team{
+/* .Team {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -153,7 +156,7 @@ button{
     margin-top: 10px;
 }
 
-.card_1{
+.card_1 {
     width: 280px;
     height: 50vh;
     border-radius: 4px;
@@ -161,17 +164,17 @@ button{
     background-color: white;
 }
 
-.card_1:hover{
+.card_1:hover {
     transform: translateY(-3px);
 }
 
-.card_1 img{
+.card_1 img {
     width: 100%;
     height: 25vh;
     border-radius: 4px 4px 0 0;
 }
 
-.dis_card{
+.dis_card {
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -180,7 +183,7 @@ button{
     gap: 5px;
 }
 
-.dis_card p{
+.dis_card p {
     width: 100%;
     display: flex;
     text-align: justify;
@@ -188,7 +191,7 @@ button{
     align-items: center;
 }
 
-.dis_card button{
+.dis_card button {
     width: 65px;
     height: 25px;
     margin-top: 5px;
@@ -198,12 +201,97 @@ button{
     color: white;
 }
 
-.Team h3{
+.Team h3 {
     padding: 10px;
     color: darkorange;
+} */
+
+.Team{
+    padding: 10px;
+    margin-top: 10px;
 }
 
-.Values{
+.wrapper{
+    width: 100%;
+    height: 62vh;
+}
+
+.box_area{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 20px;
+}
+
+.box{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 2px;
+    cursor: pointer;
+}
+
+.box img{
+    width: 100%;
+    height: 60vh;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5;
+}
+
+.overlay{
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent, #1c1c1cc3 68%);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0, 40px ;
+    font-size: 14px;
+    transition: heigth 0.5s;
+    color: white;
+    font-weight: bold;
+}
+
+.overlay h3{
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 80%;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.overlay a{
+    margin-top: 10px;
+    color: #1c1c1c;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.overlay a:hover{
+    color: white;
+    font-weight: bold;
+    background-color: darkorange;
+}
+
+.boxLhover img{
+    transform: scale(1.2);
+}
+
+.box:hover .overlay{
+    height: 100%;
+}
+.Values {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -211,13 +299,13 @@ button{
     gap: 10px;
 }
 
-.Values p{
+.Values p {
     width: 50%;
     display: flex;
     text-align: justify;
 }
 
-.value_card{
+.value_card {
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -225,7 +313,7 @@ button{
     margin-top: 20px;
 }
 
-.value_card .va_card{
+.value_card .va_card {
     width: 100%;
     height: 29vh;
     background-color: #eaf7ed;
@@ -238,23 +326,23 @@ button{
     gap: 10px;
 }
 
-.va_card h3{
+.va_card h3 {
     color: darkorange;
     font-weight: bold;
 }
 
-.va_card p{
+.va_card p {
     width: 90%;
     display: flex;
     text-align: justify;
 }
 
-.va_card .fas{
+.va_card .fas {
     font-size: 50px;
     color: green;
 }
 
-.about_us{
+.about_us {
     width: 70%;
     height: 40vh;
     display: flex;
@@ -267,17 +355,17 @@ button{
     margin-top: 20px;
 }
 
-.about_us .our_story{
+.about_us .our_story {
     width: 50%;
     padding: 10px;
 }
 
-.our_story h2{
+.our_story h2 {
     font-weight: bold;
     color: darkorange;
 }
 
-.our_story p{
+.our_story p {
     width: 100%;
     display: flex;
     text-align: justify;
@@ -285,15 +373,15 @@ button{
     margin-top: 10px;
 }
 
-.pic img{
+.pic img {
     width: 100%;
     height: 40vh;
     border-radius: 0 4px 4px 0;
 }
 
-.requestions{
+.requestions {
     width: 100%;
-    height: 90vh;
+    height: 92vh;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -302,31 +390,31 @@ button{
     margin-top: 20px;
 }
 
-.requestions h2{
+.requestions h2 {
     color: #2e9d50;
     font-weight: bold;
 }
 
-.question{
+.question {
     display: flex;
     gap: 30px;
     margin-top: 20px;
 }
 
-.question_2{
+.question_2 {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.question_2 .icon_1{
+.question_2 .icon_1 {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
 }
 
-.circle_icon{
+.circle_icon {
     width: 80px;
     height: 80px;
     border-radius: 80px;
@@ -337,57 +425,250 @@ button{
     border: 4px solid white;
 }
 
-.circle_icon .fas{
+.circle_icon .fas {
     font-size: 40px;
     color: white;
 }
 
 /* ................requestions.............. */
 
- .faq-container {
-      max-width: 600px;
-      /* margin: auto; */
-    }
+.faq-container {
+    width: 100%;
+    /* margin: auto; */
+}
 
-    .faq-item {
-      background-color: #eaf7ed;
-      padding: 15px 15px;
-      cursor: pointer;
-    }
+.faq-item {
+    background-color: #eaf7ed;
+    padding: 15px 15px;
+    cursor: pointer;
+}
 
-    .faq-question {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-weight: bold;
-      color: #222;
-    }
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    color: #222;
+}
 
-    .faq-icon {
-      font-size: 18px;
-      color: #2e9d50;
-      transition: transform 0.3s ease;
-    }
+.faq-icon {
+    font-size: 18px;
+    color: #2e9d50;
+    transition: transform 0.3s ease;
+}
 
-    .faq-item.active .faq-icon {
-      transform: rotate(90deg); /* Point right → down */
-    }
+.faq-item.active .faq-icon {
+    transform: rotate(90deg);
+    /* Point right → down */
+}
 
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease;
-      padding-left: 0;
-      padding-top: 10px;
-      font-size: 14px;
-      color: #444;
-    }
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-left: 0;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #444;
+}
 
-    .faq-item.active .faq-answer {
-      max-height: 200px;
-    }
+.faq-item.active .faq-answer {
+    max-height: 200px;
+}
 
-    .faq-divider {
-      border-bottom: 1px solid #2e9d50;
-      margin-top: 15px;
-    }
+.faq-divider {
+    border-bottom: 1px solid #2e9d50;
+    margin-top: 15px;
+}
+
+/* .....................footer ....................... */
+
+footer {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: black;
+    color: white;
+
+}
+
+.foot_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.content_foot {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content_foot h3{
+    display: flex;
+    align-items: center;
+    color: darkorange;
+}
+
+.content_foot ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.content_foot-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content_foot-1 h3{
+    color: darkorange;
+}
+
+.content_foot-1 ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ...........social ............ */
+.logo_fo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+}
+
+.social img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social img:hover {
+    transform: translateY(-2px);
+}
+
+.logo_fo-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo_fo-1 h3{
+    color: darkorange;
+}
+
+.logo_fo-1 img {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*................ contacts us............. */
+
+
+form {
+    width: 140%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+input,
+textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+    padding: 8px 0;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-bottom: 1px solid #fff;
+}
+
+.content_foot-2 button{
+    width: 140%;
+    height: 45px;
+    border-radius: 20px;
+    background-color: black;
+    border: 2px solid darkorange;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.content_foot-2 button:hover{
+    background-color: orange;
+}
+
+/*............... hr ............ */
+
+hr{
+    width: 97%;
+    margin-top: 40px;
+}
+
+.content_foot-3{
+    padding: 0 40px 0 0 ;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.foot_left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* .........mune ...... */
+.To_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.content_fo ul {
+    gap: 30px;
+}
+
+.content_fo-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 0 20px 0 0;
+}
+
+li h2{
+    color: darkorange;
+}
