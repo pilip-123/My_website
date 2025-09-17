@@ -4,6 +4,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+
+}
+
 nav {
     width: 100%;
     padding: 15px;
@@ -12,16 +17,17 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
 }
 
 .logo {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
+    margin-left: 50px;
 }
 
 .logo img {
@@ -462,4 +468,91 @@ hr{
 
 li h2{
     color: darkorange;
+}
+
+/*.............Responsive ................ */
+
+@media(max-width: 767px){
+    nav {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .logo {
+        gap: 10px;
+        margin: auto;
+    }
+
+    .logo img{
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+    }
+
+    .logo h3 {
+        font-size: 12px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    ul li a {
+        font-size: 12px;
+    }
+
+    ul button {
+        font-size: 8px;
+        width: 40px;
+        height: 20px;
+    }
+
+    ul #B {
+        font-size: 8px;
+        width: 40px;
+        height: 20px;
+    }
+
+    .benner {
+        width: 100%;
+    }
+
+    .Title h1 {
+        width: 170%;
+        font-size: 1.5em;
+    }
+
+    .Title p {
+        width: 180%;
+    }
+
+    .Title button {
+        width: 50%;
+    }
+
+    .content{
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .address{
+        width: 50%;
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .map-locate iframe{
+        width: 200%;
+        height: 50vh;
+    }
+
+    .form-container{
+        width: 100%;
+        margin: auto;
+    }
+
+
 }
