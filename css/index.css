@@ -896,12 +896,16 @@ li h2 {
     }
 
     .container{
-        top: 43%;
+        top: 50%;
         height: 90vh;
     }
 
     .slide .item{
         width: 100%;
+    }
+
+    .button button{
+        margin-top: 80px;
     }
    
     .content-1{
