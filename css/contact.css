@@ -417,6 +417,7 @@ textarea:focus {
     border-radius: 20px;
     background-color: black;
     border: 2px solid darkorange;
+    cursor: pointer;
     color: white;
     margin-top: 20px;
     font-weight: bold;
@@ -554,5 +555,120 @@ li h2{
         margin: auto;
     }
 
+  footer {
+        width: 100%;
+    }
+
+    .To_top {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .content_fo {
+        font-size: 12px;
+    }
+
+    .content_fo ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-right: 10%;
+    }
+
+    .foot_1 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+    }
+
+    .content_foot-2 {
+        width: 50%;
+    }
+
+}
+
+/* ...................Tablate ................. */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav{
+        width: 100%;
+        gap: 20px;
+    }
+
+    .logo h3{
+        font-size: 18px;
+    }
+
+    .Title h1{
+        width: 160%;
+    }
+
+    .Title p{
+        width: 150%;
+    }
+
+    .benner button{
+        width: 30%;
+    }
+
+    .content{
+        margin: auto;
+    }
+
+    .content .address{
+        width: 50%;
+    }
+
+    .content .phone{
+        margin-right: 90px;
+    }
+
+
+    footer{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .foot_1{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .content_foot{
+        width: 20%;
+    }
+
+    .content_foot-1{
+        width: 20%;
+    }
+
+    .logo_fo{
+        width: 30%;
+    }
+
+    .social img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .logo_fo-1 img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    .content_foot-2{
+        width: 30%;
+    }
+    
+    .content_foot-2 input{
+        width: 50%;
+    }
+
+    .content_foot-2 button{
+        width: 70%;
+    }
 
 }

@@ -582,6 +582,7 @@ textarea:focus {
     color: white;
     margin-top: 20px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .content_foot-2 button:hover{
@@ -840,5 +841,45 @@ li h2{
     .foot_1{
         width: 90%;
         gap: 20px;
+        margin-left: 40px;
     }
+
+     footer {
+        width: 100%;
+    }
+
+   .content_foot{
+    width: 30%;
+   }
+
+   .content_foot-1{
+    width: 20%;
+   }
+
+   .logo_fo{
+    width: 20%;
+   }
+
+   .social img{
+    width: 20px;
+    height: 20px;
+   }
+
+   .logo_fo-1 img{
+    width: 20px;
+    height: 20px;
+   }
+
+   .content_foot-2{
+    width: 30%;
+   }
+
+   .content_foot-2 input{
+    width: 60%;
+   }
+
+   .content_foot-2 button{
+    width: 90%;
+   }
+
 }
