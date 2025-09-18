@@ -888,15 +888,15 @@ li h2 {
 @media (min-width: 1025px) {
 
     nav{
-        height: 80px;
+        height: 40px;
     }
 
     ul li a{
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .container{
-        top: 50%;
+        top: 54.5%;
         height: 90vh;
     }
 
@@ -905,19 +905,19 @@ li h2 {
     }
 
     .button button{
-        margin-top: 80px;
+        margin-top: 70px;
     }
    
     .content-1{
-        margin-top: 42%;
+        margin-top: 45%;
     }
 
     .content-1 h2{
-        font-size: 40px;
+        font-size: 32px;
     }
 
     .content-1 p{
-        font-size: 24px;
+        font-size: 16px;
     }
     .main_box {
         display: grid;
