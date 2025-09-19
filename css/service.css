@@ -773,3 +773,131 @@ hr{
 li h2{
     color: darkorange;
 }
+
+/*........................Responsive................. */
+
+@media(max-width: 767px){
+    nav{
+        width: 100%;
+        gap: 20px;
+    }
+
+    .logo{
+        gap: 10px;
+        margin: 0;
+    }
+
+    .logo img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo h3{
+        font-size: 16px;
+    }
+
+    nav ul{
+        gap: 20px;
+    }
+
+    ul li a{
+        font-size: 12px;
+    }
+
+    .benner h1{
+        width: 160%;
+        font-size: 18px;
+    }
+
+    .benner p{
+        width: 160%;
+    }
+
+    .benner  button{
+        width: 50%;
+    }
+
+    .description p{
+        width: 90%;
+    }
+
+    .Target h2{
+        font-size: 20px;
+    }
+
+    .Target button{
+       width: 20%;
+    }
+
+    .Orange-product{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 6px;
+        padding: 20px;
+    }
+
+    .Orange-card{
+        width: 100%;
+    }
+
+    .passion-product{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+        padding: 20px;
+    }
+
+    .poster{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+    }
+
+    .poster-1,.poster-2{
+        width: 100%;
+    }
+
+    .Carot-product{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+        padding: 20px;
+    }
+
+    .Apple-product{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+        padding: 20px;
+    }
+
+    .Apple-product-1{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+        padding: 20px;
+    }
+
+    .Apple-product-2{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+        padding: 20px;
+    }
+
+    .Apple-card{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .watermelon-product-4{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+
+    .watermelon-product-3{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+}
