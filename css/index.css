@@ -94,7 +94,7 @@ ul button:hover {
 /*................... app js ....................... */
 .container {
     position: absolute;
-    top: 52%;
+    top: 51%;
     left:50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -240,7 +240,7 @@ ul button:hover {
 }
 
 .content-1 h2{
-    margin-top: 85%;
+    margin-top: 84%;
 }
 
 .main_box {
@@ -385,7 +385,7 @@ ul button:hover {
 }
 
 .pic_1 img {
-    width: 75%;
+    width: 67%;
     height: 22vh;
     border-radius: 130px;
     box-shadow: 0 0 2px;
@@ -892,6 +892,9 @@ li h2 {
 
 /* .............. Desktop ............... */
 
-@media (min-width: 1024px) and (min-width: 1080px) {
+/* @media(min-width:800) and (max-width: 1280px) {
+  .container{
+    top: 47%;
+  }
 
-}
+} */
