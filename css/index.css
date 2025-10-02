@@ -593,13 +593,18 @@ li h2 {
 
 @media(max-width: 767px) {
 
-    nav {
+    nav{
         width: 100%;
-        gap: 20px;
+        gap: 10px;
+    }
+
+    .logo img{
+        width: 40px;
+        height: 40px;
     }
 
     .logo {
-        gap: 10px;
+        gap: 5px;
         margin: auto;
         margin-left: 10px;
     }
@@ -618,7 +623,7 @@ li h2 {
 
     ul button {
         font-size: 8px;
-        width: 40px;
+        width: 34px;
         height: 20px;
     }
 
