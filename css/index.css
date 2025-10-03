@@ -786,6 +786,10 @@ li h2 {
         top: 49%;
     }
 
+    .slide .content{
+        height: 20vh;
+    }
+
     .slide .item {
         width: 100%;
     }
@@ -807,7 +811,7 @@ li h2 {
     }
 
     .button button {
-        margin-top: 55%;
+        margin-top: 55%;    
     }
 
     .content-1 {
@@ -910,9 +914,22 @@ li h2 {
 
 /* .............. Desktop ............... */
 
-/* @media(min-width:800) and (max-width: 1280px) {
-  .container{
-    top: 47%;
-  }
+@media(max-width:1280px)and (min-width:1280px){
 
-} */
+    nav{
+        height: 70px;
+    }
+
+    .logo img{
+        width: 60px;
+        height: 60px;
+    }
+
+    ul li a{
+        font-size: 24px;
+    }
+    .container{
+        top: 39%;
+    }
+
+}
