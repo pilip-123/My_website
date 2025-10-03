@@ -4,7 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -20,6 +20,7 @@ nav {
     /* position: sticky;
     top: 0; */
 }
+
 .logo {
     display: flex;
     flex-direction: row;
@@ -95,7 +96,7 @@ ul button:hover {
 .container {
     position: absolute;
     top: 51%;
-    left:50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
     height: 80vh;
@@ -148,8 +149,11 @@ ul button:hover {
 .item .content {
     position: absolute;
     top: 50%;
-    left: 100px;
-    width: 300px;
+    left: 90px;
+    width: 550px;
+    height: 28vh;
+    border-radius: 8px;
+    background-color: #00000033;
     text-align: left;
     color: white;
     transform: translate(0, -50%);
@@ -163,7 +167,8 @@ ul button:hover {
 
 .content .name {
     width: 180%;
-    font-size: 40px;
+    font-size: 2em;
+    padding: 20px 0 0 20px;
     text-transform: uppercase;
     font-weight: bold;
     color: white;
@@ -174,45 +179,48 @@ ul button:hover {
 .content .des {
     margin-top: 10px;
     margin-bottom: 20px;
+    padding: 0 0 0 20px;
+    color: #eeeeee;
     opacity: 0;
     animation: animate 1s ease-in-out 0.3s 1 forwards;
 }
 
 .content button {
     padding: 10px 20px;
-    background-color: darkorange;
+    background-color: #ff8800;
     color: white;
     font-weight: bold;
     border: none;
     cursor: pointer;
     border-radius: 4px;
+    margin-left: 20px;
     opacity: 0;
     animation: animate 1s ease-in-out 0.6s 1 forwards;
 }
 
-@keyframes animate{
-    from{
+@keyframes animate {
+    from {
         opacity: 0;
         transform: translate(0, 100px);
         filter: blur(33px);
     }
 
-    to{
+    to {
         opacity: 1;
         transform: translate(0);
         filter: blur(0);
     }
 }
 
-.button{
+.button {
     width: 100%;
-   text-align: center;
+    text-align: center;
     position: absolute;
     border: 20px;
     margin-top: 35%;
 }
 
-.button button{
+.button button {
     width: 40px;
     height: 35px;
     border-radius: 8px;
@@ -223,7 +231,7 @@ ul button:hover {
     transition: 0.3s;
 }
 
-.button button:hover{
+.button button:hover {
     background: gray;
     color: white;
 }
@@ -239,7 +247,7 @@ ul button:hover {
     margin: auto;
 }
 
-.content-1 h2{
+.content-1 h2 {
     margin-top: 84%;
 }
 
@@ -593,12 +601,12 @@ li h2 {
 
 @media(max-width: 767px) {
 
-    nav{
+    nav {
         width: 100%;
         gap: 10px;
     }
 
-    .logo img{
+    .logo img {
         width: 40px;
         height: 40px;
     }
@@ -633,28 +641,29 @@ li h2 {
         height: 20px;
     }
 
-    .container{
+    .container {
         width: 100%;
         top: 51%;
     }
 
-    .item .content{
-       left: 30px;
+    .item .content {
+        left: 30px;
     }
 
-    .content .name{
+
+    .content .name {
         font-size: 24px;
     }
 
-   .button button{
-    margin-top: 90%;
-   }
+    .button button {
+        margin-top: 90%;
+    }
 
-   .slide .item:nth-child(3){
-    margin-top: 28%;
-   }
+    .slide .item:nth-child(3) {
+        margin-top: 28%;
+    }
 
-    .content-1{
+    .content-1 {
         margin-top: 120%;
     }
 
@@ -751,9 +760,10 @@ li h2 {
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-    body{
+    body {
         overflow-x: hidden;
     }
+
     nav {
         width: 100%;
         gap: 40px;
@@ -763,7 +773,7 @@ li h2 {
         gap: 10px;
     }
 
-    .logo h3{
+    .logo h3 {
         font-size: 18px;
     }
 
@@ -772,32 +782,35 @@ li h2 {
 
     }
 
-    .container{
+    .container {
         top: 49%;
     }
 
-    .slide .item{
+    .slide .item {
         width: 100%;
     }
 
-    .slide .item:nth-child(3){
-        margin-top: 150px;
-    }
-    .slide .item:nth-child(4){
-        margin-top: 150px;
-    }
-    .slide .item:nth-child(5){
-        margin-top: 150px;
-    }
-    .slide .item:nth-child(n + 6){
+    .slide .item:nth-child(3) {
         margin-top: 150px;
     }
 
-    .button button{
+    .slide .item:nth-child(4) {
+        margin-top: 150px;
+    }
+
+    .slide .item:nth-child(5) {
+        margin-top: 150px;
+    }
+
+    .slide .item:nth-child(n + 6) {
+        margin-top: 150px;
+    }
+
+    .button button {
         margin-top: 55%;
     }
 
-    .content-1{
+    .content-1 {
         margin-top: 60%;
     }
 
@@ -846,50 +859,50 @@ li h2 {
         font-size: 12px;
     }
 
-    
-    footer{
+
+    footer {
         width: 100%;
         padding: 10px;
     }
 
-    .foot_1{
+    .foot_1 {
         width: 100%;
         padding: 10px;
         margin: auto;
     }
 
-    .content_foot{
+    .content_foot {
         width: 25%;
         margin-left: 20px;
     }
 
-    .content_foot-1{
+    .content_foot-1 {
         width: 20%;
     }
 
-    .logo_fo{
+    .logo_fo {
         width: 30%;
     }
 
-    .social img{
+    .social img {
         width: 20px;
         height: 20px;
     }
 
-    .logo_fo-1 img{
+    .logo_fo-1 img {
         width: 20px;
         height: 20px;
     }
-    
-    .content_foot-2{
+
+    .content_foot-2 {
         width: 30%;
     }
-    
-    .content_foot-2 input{
+
+    .content_foot-2 input {
         width: 50%;
     }
 
-    .content_foot-2 button{
+    .content_foot-2 button {
         width: 70%;
     }
 
