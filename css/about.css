@@ -734,7 +734,7 @@ li h2{
     }
 
     .requestions{
-        margin-top: 180%;
+        margin-top: 160%;
         height: 135vh;
     }
 
@@ -829,7 +829,7 @@ li h2{
 
     .requestions{
         height: 110vh;
-        margin-top: 78%;
+        margin-top: 60%;
     }
 
     .question{
@@ -881,4 +881,10 @@ li h2{
     width: 90%;
    }
 
+}
+
+@media(max-width:1280px)and (min-width:1280px){
+    .requestions{
+        margin-top: 0;
+    }
 }
