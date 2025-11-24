@@ -176,6 +176,12 @@ button {
     gap: 10px;
 }
 
+.va_card .fas:hover{
+    transform: translateY(4px);
+    transition: 1s;
+    cursor: pointer;
+}
+
 .va_card h3 {
     color: darkorange;
     font-weight: bold;
