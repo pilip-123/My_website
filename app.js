@@ -11,4 +11,4 @@ prev.addEventListener('click',function(){
 
 setInterval(() => {
     next.click(); 
-}, 8000);
+}, 2000);
