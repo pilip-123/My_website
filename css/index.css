@@ -252,7 +252,7 @@ ul button:hover {
     font-size: 1.5rem;
 }
 
-.content-1 p{
+.content-1 p {
     font-size: 1rem;
 }
 
@@ -520,17 +520,20 @@ footer {
     gap: 10px;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    max-width: 100%;
 }
+
 .content_foot-2 label {
     color: white;
 }
 
 .content_foot-2 input {
-    width: 240px;
+    width: 100%;
+    max-width: 240px;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #ccc;
@@ -546,6 +549,7 @@ form{
 
 .content_foot-2 button {
     width: 100%;
+    max-width: 240px;
     height: 45px;
     border-radius: 20px;
     background-color: black;
@@ -608,12 +612,12 @@ form{
     font-size: 0.9em;
 }
 
-hr{
+hr {
     width: 97%;
     margin-top: 40px;
 }
 
-li h2{
+li h2 {
     color: darkorange;
 }
 
@@ -622,12 +626,12 @@ li h2{
     .main_box {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .content_2 {
         flex-direction: column;
         height: auto;
     }
-    
+
     .content_2 img {
         width: 100%;
         height: 300px;
@@ -638,20 +642,20 @@ li h2{
     .main_box {
         grid-template-columns: 1fr;
     }
-    
+
     .slide .item:nth-child(n +3) {
         display: none;
     }
-    
+
     .content .name {
         font-size: 1.5em;
         width: 100%;
     }
-    
+
     .content .des {
         font-size: 0.9em;
     }
-    
+
     .content-1 {
         width: 90%;
     }
